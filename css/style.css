@@ -100,6 +100,12 @@ a{
     top: 0;
     left: 0;
     width: 100%;
+    transition: 0.2s linear;
+    padding-bottom: 20px;
+    z-index: 1000;
+}
+.header_active{
+    background: #0E1D28;
 }
 
 .header__wrapper{
@@ -375,4 +381,115 @@ a{
 }
 .top__title{
     margin-bottom: 54px;
+}
+.top__cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:57px;
+}
+.top__card-pic{
+    position: relative;
+    margin-bottom: 45px;
+}
+.top__card-stats{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(21, 24, 36, 0.6);
+    padding: 16px 25px;
+    justify-content: flex-end;
+}
+.top__card-title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    margin: 0 auto 0 0;
+}
+.top__card-likes{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color:#fff;
+    padding-right: 20px;
+    background: url(../img/Heart.svg) no-repeat right;
+    margin-right: 14px;
+}
+.top__card-comments{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color:#fff;
+    padding-right: 23px;
+    background: url(../img/Comment.svg) no-repeat right;
+}
+.top__card-desc{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 31px;
+}
+.top__card-more{
+    padding: 12px 19px;
+    background: #006DFE;
+    color:#fff;
+    font-size: 16px;
+}
+.top__card-more:hover,.top__card-more:focus,.top__card-more:active{
+    background:#004cb0;;
+}
+/* Video */
+.video{
+    width: 100%;
+}
+.video__wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+.video__item{
+    padding-top: 56.25%;
+}
+.video__element{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+/* Footer */
+.footer{
+    background: #0E1D28;
+    padding: 119px 0;
+}
+.footer__item{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer__logo{
+    width: 50%;
+}
+.footer__nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+}
+.footer__menu-title{
+    color:#fff;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+.footer__menu-link{
+    color: #fff;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+.footer__menu-link:hover, .footer__menu-link:focus,.footer__menu-link:active{
+    opacity: 0.7;
 }
