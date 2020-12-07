@@ -71,10 +71,12 @@ a{
 .container{
     max-width: 1060px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 .container__large{
     max-width: 1262px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 .section__title{
     font-weight: 500;
@@ -102,7 +104,7 @@ a{
     width: 100%;
     transition: 0.2s linear;
     padding-bottom: 20px;
-    z-index: 1000;
+    z-index: 8;
 }
 .header_active{
     background: #0E1D28;
@@ -132,6 +134,30 @@ a{
 }
 .header__link:hover,.header__link:focus,.header__link:active{
     opacity: 0.7;
+}
+.header__burger{
+    width: 40px;
+    height: 28px;
+    position: relative;
+    display: none;
+}
+.burger__line{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+}
+.burger__line_first{
+    top: 0;
+}
+.burger__line_second{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.burger__line_third{
+    bottom: 0;
 }
 /* Inro */
 
@@ -291,7 +317,8 @@ a{
 .places__cards{
     display: grid;
     grid-template-columns:repeat(6,1fr);
-    grid-gap: 10px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
 }
 .places__card{
     position: relative;
@@ -348,7 +375,7 @@ a{
 .tours__tour{
     display: grid;
     grid-template-columns:repeat(2,1fr);
-    grid-gap:0 108px;
+    grid-column-gap: 108px;
     align-items: center;
     margin-bottom: 77px;
 }
@@ -384,8 +411,13 @@ a{
 }
 .top__cards{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap:57px;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap:57px;
+    grid-row-gap:57px;
+}
+.top__card{
+    
+    grid-column: span 2;
 }
 .top__card-pic{
     position: relative;
@@ -493,3 +525,16 @@ a{
 .footer__menu-link:hover, .footer__menu-link:focus,.footer__menu-link:active{
     opacity: 0.7;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
