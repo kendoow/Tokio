@@ -56,10 +56,14 @@
                 const currentTarget = this.getAttribute('href');
                 smoothScroll(currentTarget, 750);
             });
-            each.addEventListener('click', () =>{
-                menu.classList.remove('header__nav-active');
-            });
         });
     };
     scrollTo();
+
+    const CloseMobile = function(){
+        links.addEventListener('click', () =>{
+            menu.classList.remove('header__nav-active');
+        });
+    };
+    CloseMobile();
 }());
