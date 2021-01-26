@@ -61,8 +61,11 @@
     scrollTo();
 
     const CloseMobile = function(){
-        links.addEventListener('click', () =>{
-            menu.classList.remove('header__nav-active');
+        links.forEach(each => {
+            each.addEventListener('click', () =>{
+                menu.classList.remove('header__nav-active');
+            });
+        
         });
     };
     CloseMobile();
