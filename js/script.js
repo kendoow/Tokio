@@ -63,7 +63,7 @@
     const CloseMobile = function(){
         const links = document.querySelectorAll('.js-scroll');
         links.forEach(each => {
-            each.addEventListener('touch', () =>{
+            each.addEventListener('click', () =>{
                 menu.classList.remove('header__nav-active');
             });
         
