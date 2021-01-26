@@ -4,7 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Макет5</title>
+  <title>Discover Amazing places in Japan</title>
+  <meta name="decription" content="">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/fav-icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/fav-icons">
+<link rel="icon" type="image/png" sizes="16x16" href="img/fav-icons/favicon-16x16.png">
+<link rel="manifest" href="img/fav-icons/site.webmanifest">
+<link rel="mask-icon" href="img/fav-icons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
@@ -29,16 +37,16 @@
           <ul class="header__list">
 
             <li class="header__item">
-              <a href="" class="header__link">Articles</a>
+              <a href="#articles" class="header__link js-scroll">Articles</a>
             </li>
             <li class="header__item">
-              <a href="" class="header__link">Locations</a>
+              <a href="#locations" class="header__link js-scroll">Locations</a>
             </li>
             <li class="header__item">
-              <a href="" class="header__link">Videos</a>
+              <a href="#videos" class="header__link js-scroll">Videos</a>
             </li>
             <li class="header__item">
-              <a href="" class="header__link">Sign in</a>
+              <a href="#sign-in" class="header__link js-scroll">Sign in</a>
             </li>
           </ul>
           <div class="header__nav-close">
@@ -57,7 +65,7 @@
   </header>
 
   <main class="main">
-    <section class="intro">
+    <section class="intro" id="sign-in">
       <div class="container">
         <h1 class="intro__title">
           Discover Amazing places in Japan
@@ -194,7 +202,7 @@
       </div>
     </section>
 
-    <div class="tours">
+    <div class="tours" id="articles">
       <div class="container__large">
 
         <div class="tours__tour">
@@ -229,7 +237,7 @@
         </div>
 
 
-        <section class="top">
+        <section class="top" id="locations">
           <div class="container__large">
             <h2 class="top__title section__title">Today top places to visit</h2>
           </div>
@@ -373,7 +381,7 @@
       </div>
     </div>
 
-    <div class="video">
+    <div class="video" id="videos">
       <div class="video__wrapper">
         <div class="video__item"></div>
         <iframe class="video__element"  src="https://www.youtube.com/embed/yY7iGa4t9-I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
