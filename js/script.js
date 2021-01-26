@@ -61,6 +61,7 @@
     scrollTo();
 
     const CloseMobile = function(){
+        const menu = document.querySelector('.header__nav');
         const links = document.querySelectorAll('.js-scroll');
         links.forEach(each => {
             each.addEventListener('click', () =>{
