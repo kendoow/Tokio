@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @media(max-width:960px){
     .benefits{
         margin-bottom: 75px;
@@ -16,12 +23,15 @@
         padding: 55px 15px;
     }
     .benefits__wrap{
-        box-shadow: none;
+        -webkit-box-shadow: none;
+                box-shadow: none;
     }
     .places__card_size_lg{
+        -ms-grid-column-span: 6;
         grid-column: span 6;
     }
     .places__card_size_sm{
+        -ms-grid-column-span: 6;
         grid-column: span 6;
     }
     .tours__tour{
@@ -37,10 +47,13 @@
         margin-bottom: 15px;
     }
     .top__cards{
-        column-gap:25px;
+        -webkit-column-gap:25px;
+           -moz-column-gap:25px;
+                column-gap:25px;
         row-gap: 55px;
     }
     .top__card{
+        -ms-grid-column-span: 3;
         grid-column: span 3;
     }
     .top__card-pic{
@@ -67,11 +80,19 @@
         z-index: 10;
         background-color: #000;
         padding: 75px;
-        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+                transform: translateX(100%);
+        -webkit-transition: 0.2s all linear;
+        -o-transition: 0.2s all linear;
         transition: 0.2s all linear;
     }
     .header__nav-active{
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+                transform: translateX(0);
+        -webkit-transition: 0.2s all linear;
+        -o-transition: 0.2s all linear;
         transition: 0.2s all linear;
     }
     .header__item{
@@ -102,15 +123,22 @@
         background: #fff;
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
     }
     .header__nav-close-line:first-child{
-        transform: translateY(-50%) rotate(45deg);
+        -webkit-transform: translateY(-50%) rotate(45deg);
+            -ms-transform: translateY(-50%) rotate(45deg);
+                transform: translateY(-50%) rotate(45deg);
     }
     .header__nav-close-line:last-child{
-        transform: translateY(-50%) rotate(-45deg);
+        -webkit-transform: translateY(-50%) rotate(-45deg);
+            -ms-transform: translateY(-50%) rotate(-45deg);
+                transform: translateY(-50%) rotate(-45deg);
     }
     .benefits__card{
+        -ms-grid-column-span: 3;
         grid-column: span 3;
     }
     .search-form__field{
@@ -118,6 +146,18 @@
         width: 100%;
         padding-bottom: 12px;
         background: url(../img/Oval.svg) no-repeat left 2px;
+    }
+    .search-form__field::-webkit-input-placeholder{
+        font-size: 16px;
+    }
+    .search-form__field::-moz-placeholder{
+        font-size: 16px;
+    }
+    .search-form__field:-ms-input-placeholder{
+        font-size: 16px;
+    }
+    .search-form__field::-ms-input-placeholder{
+        font-size: 16px;
     }
     .search-form__field::placeholder{
         font-size: 16px;
@@ -172,13 +212,15 @@
         margin-bottom: 70px;
     }
     .tour__pic, .tour__info{
+        -ms-grid-column-span: 2;
         grid-column: span 2;
     }
     .tour__pic{
         margin-bottom: 12px;
     }
     .tour__pic_mob-first{
-        grid-row-start:-1 ;
+        -ms-grid-row:-1 ;
+            grid-row-start:-1 ;
     }
     .tours__tour{
         margin-bottom: 50px;
@@ -187,6 +229,7 @@
         margin-bottom: 70px;
     }
     .top__card{
+        -ms-grid-column-span: 6;
         grid-column: span 6;
     }
     .top__card-stats{
@@ -196,8 +239,12 @@
         margin-bottom: 15px;
     }
     .footer__logo{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         width: 100%;
         margin-bottom: 20px;
     }
@@ -205,4 +252,4 @@
         width: 100%;
     }
     
-}
+};
