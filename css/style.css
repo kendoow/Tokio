@@ -185,7 +185,7 @@ a{
 
 .intro{
     min-height: 100vh;
-    background: url(../img/Hero.png) no-repeat center;
+    background: url(../img/Hero-min.png) no-repeat center;
     background-size: cover;
     padding-top: 263px;
     padding-bottom: 223px;
