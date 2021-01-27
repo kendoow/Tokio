@@ -17,7 +17,7 @@
     }
     .benefits__cards{
         padding:0 15px;
-        grid-column-gap:35px;
+        column-gap:35px;
     }
     .benefits__title{
         padding: 55px 15px;
@@ -35,7 +35,7 @@
         grid-column: span 6;
     }
     .tours__tour{
-        grid-column-gap:35px;
+        column-gap:35px;
     }
     .tour__info{
         padding-left: 0;
