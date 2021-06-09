@@ -72,3 +72,16 @@
     };
     CloseMobile();
 }());
+// unable js and css for mobile
+
+const resize = function(){
+    const pageWidth = document.documentElement.scrollWidth;
+    const remove = document.getElementById("remove")
+    if (pageWidth < 767){
+        remove.remove();
+    }
+    else{
+        
+    }
+}
+resize();
