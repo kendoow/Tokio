@@ -80,8 +80,5 @@ const resize = function(){
     if (pageWidth < 767){
         remove.remove();
     }
-    else{
-        
-    }
 }
 resize();
