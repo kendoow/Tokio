@@ -75,10 +75,10 @@
 // unable js and css for mobile
 
 const resize = function(){
-    const pageWidth = document.documentElement.scrollWidth;
+    const pageWidth = window.innerWidth;
     const remove = document.getElementById("remove")
     if (pageWidth < 767){
         remove.remove();
     }
+    resize();
 }
-resize();
